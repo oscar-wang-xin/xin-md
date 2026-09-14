@@ -23,3 +23,10 @@ pnpm-debug.log*
 .env
 .env.*
 !.env.example
+
+# Reference material
+_ref/
+
+# Local tooling / permission files (not for public)
+.reasonix/
+reasonix.toml

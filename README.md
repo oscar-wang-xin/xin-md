@@ -4,6 +4,29 @@ Markdown 写作，一键转成**内联样式**富文本，粘贴到微信公众�
 
 微信公众号编辑器会丢弃 `class` 与 `<style>`，只保留内联 `style`。本项目的主题系统因此不产出任何 CSS 类，只产出内联样式字符串，保证预览与粘贴结果一致。
 
+## 分支与来源
+
+本项目 git 远端为 [oscar-wang-xin/xin-md](https://github.com/oscar-wang-xin/xin-md)
+（fork 自 Bryc 初建的 Same 项目，主线作者 bryc3 `666406@gmail.com`，历史共 5 个提交）。克隆时的原始 `main`
+已原样归档到 **`mars`** 分支（对应提交 `d3cda59`，即 fork 版本快照）；当前 `main` 在其基础上继续演进。
+"Mars Editor" 名称即取自 "火星编辑器"。
+
+### 新增主题（gzh-design-skill 移植）
+
+在原有 12 套主题之上，移植了 [gzh-design-skill](_ref/gzh-design-skill__skillhub/)
+（公众号排版组件库）的 6 套主题：
+
+| 主题 | id | 特点 |
+|------|-----|------|
+| 摸鱼绿 | `moyu-green` | 绿色杂志卡片风，教程 / 盘点 / 清单 |
+| 红白色系 | `red-white` | 正红经典编辑风，红色克制点睛 |
+| 石墨极简 | `graphite-minimal` | 石墨灰 + 细线 + 超大留白 |
+| 留白禅意 | `zen-whitespace` | 衬线大字金句，东方禅意 |
+| 摸鱼票据 | `moyu-ticket` | 票据 / 门票造型，硬阴影 + 撕票虚线 |
+| 橄榄手记 | `olive-journal` | 内刊手记，墨黑 + 橙色点睛 |
+
+> 来源组件库位于 `_ref/gzh-design-skill__skillhub/`（已加入 `.gitignore`，不随仓库分发）。
+
 ## 功能
 
 - Markdown 实时预览，编辑区与预览区滚动同步
