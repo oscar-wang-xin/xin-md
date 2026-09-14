@@ -1209,6 +1209,69 @@ export const oliveJournalTheme: Theme = {
   codePaletteMode: 'light',
 };
 
+/** 冷白机甲：机甲黑 #15181d + 灰蓝 #5f6674 + 冷白 #f2f4f7，硬边冷调三色（ROBOT） */
+export const robotTheme: Theme = {
+  id: 'robot',
+  name: '冷白机甲',
+  description: '冷白机甲风，黑 / 灰蓝 / 冷白三色，硬朗克制',
+  appearance: 'light',
+  mono: MONO,
+  body: { font: SANS, fontSize: '16px', lineHeight: '1.85', color: '#39414d', bg: '#f2f4f7' },
+  accent: '#5f6674',
+  accentSoft: 'rgba(111,119,134,.12)',
+  heading: {
+    font: SANS,
+    fontWeight: '800',
+    color: '#15181d',
+    lineHeight: '1.4',
+    letterSpacing: '1px',
+    marginTop: '40px',
+    marginBottom: '16px',
+    decor: 'accent-bar',
+  },
+  headingSizes: { h1: '27px', h2: '23px', h3: '20px', h4: '18px', h5: '17px', h6: '16px' },
+  pMargin: '18px',
+  quote: {
+    background: '#e9ecf0',
+    color: '#4a525e',
+    borderLeft: '3px solid #6f7786',
+    borderRadius: '2px',
+    padding: '13px 17px',
+    margin: '20px 0',
+  },
+  callout: {
+    background: '#e9edf1',
+    color: '#464e5a',
+    borderLeft: '3px solid #5f6674',
+    borderRadius: '2px',
+    padding: '14px 16px',
+    margin: '20px 0',
+    badgeColor: '#15181d',
+  },
+  code: { background: '#e6eaee', color: '#15181d', borderRadius: '2px', padding: '2px 5px', fontSize: '0.9em' },
+  codeBlock: {
+    background: '#15181d',
+    color: '#dfe4ea',
+    borderRadius: '4px',
+    padding: '15px 17px',
+    fontSize: '13.5px',
+    lineHeight: '1.65',
+    extra: { 'box-shadow': 'inset 0 0 0 1px rgba(255,255,255,.07)' },
+  },
+  link: { color: '#5f6674', textDecoration: 'underline' },
+  listPaddingLeft: '26px',
+  listItemMargin: '6px 0',
+  table: { borderColor: '#d5dae0', headBg: '#15181d', headColor: '#f2f4f7', fontSize: '15px', cellPadding: '8px 12px' },
+  hr: { color: '#d5dae0', margin: '30px 0' },
+  img: { borderRadius: '2px', margin: '18px auto' },
+  strongColor: '#15181d',
+  delColor: '#9aa2ad',
+  mark: { background: '#d7dee6', color: '#15181d', borderRadius: '2px', padding: '1px 4px' },
+  footnote: { refColor: '#5f6674', blockBorder: '#d5dae0', textColor: '#8b939e', numColor: '#454e5b', textSize: '12px' },
+  codePalette: PALETTE_LIGHT,
+  codePaletteMode: 'light',
+};
+
 export const themes: Theme[] = [
   classicTheme,
   minimalTheme,
@@ -1228,6 +1291,7 @@ export const themes: Theme[] = [
   zenWhitespaceTheme,
   moyuTicketTheme,
   oliveJournalTheme,
+  robotTheme,
 ];
 
 /** 按 id 取主题，找不到回退经典 */
