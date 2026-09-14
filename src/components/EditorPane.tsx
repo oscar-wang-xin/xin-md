@@ -136,12 +136,12 @@ const EditorPane = forwardRef<HTMLElement, Props>(function EditorPane(
             },
             '.cm-content': {
               padding: '20px 22px 20px 24px',
-              caretColor: '#d97757',
+              caretColor: '#5f6674',
             },
             '.cm-line': { padding: '0' },
             '.cm-gutters': {
               background: 'transparent',
-              color: '#b0ab9f',
+              color: '#9aa2ad',
               fontSize: '13.5px',
               paddingLeft: '12px',
               paddingRight: '14px',
@@ -149,7 +149,7 @@ const EditorPane = forwardRef<HTMLElement, Props>(function EditorPane(
             },
             '.cm-activeLineGutter': { background: 'transparent' },
             '.cm-selectionBackground, &.cm-focused .cm-selectionBackground': {
-              background: 'rgba(217,119,87,0.2)',
+              background: 'rgba(95,102,116,0.22)',
             },
             '&.cm-focused': { outline: 'none' },
             '.cm-activeLine': { background: 'transparent' },

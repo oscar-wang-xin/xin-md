@@ -1,25 +1,25 @@
 /* ============================================================
    XIN-MD · 应用外壳样式
-   暖纸底 + 氛围光 + 噪点 + 毛玻璃 + 陶土橙强调
+   冷白机甲：冷白面板 + 冷调氛围光 + 噪点 + 毛玻璃 + 灰蓝强调
    （文章正文样式全部内联，本文件不含正文样式）
    ============================================================ */
 
 :root {
-  --bg: #f3f0ea;             /* 画布（暖米灰） */
-  --bg-glow-1: #f3e6dc;      /* 陶土氛围光（克制，避免大面积渐变感） */
-  --bg-glow-2: #eae8e0;      /* 暖沙氛围光 */
-  --panel: rgba(255, 253, 250, 0.82);
-  --panel-solid: #fffdfa;
-  --border: rgba(60, 54, 44, 0.1);
-  --border-strong: rgba(60, 54, 44, 0.18);
-  --ink: #34302a;
-  --muted: #8a857a;
-  --faint: #b0ab9f;
-  --accent: #d97757;
-  --accent-strong: #c76545;
-  --accent-soft: #f9eee7;
-  --shadow-lg: 0 24px 64px rgba(52, 40, 28, 0.14), 0 2px 8px rgba(52, 40, 28, 0.05);
-  --shadow-sm: 0 1px 2px rgba(52, 40, 28, 0.06);
+  --bg: #e9edf2;             /* 画布（冷白灰） */
+  --bg-glow-1: #dde5ee;      /* 冷蓝氛围光（克制，避免大面积渐变感） */
+  --bg-glow-2: #e4e9ef;      /* 冷白氛围光 */
+  --panel: rgba(251, 252, 254, 0.82);
+  --panel-solid: #fbfcfe;
+  --border: rgba(21, 24, 29, 0.1);
+  --border-strong: rgba(21, 24, 29, 0.18);
+  --ink: #1b1f26;
+  --muted: #6e7683;
+  --faint: #9aa2ad;
+  --accent: #5f6674;
+  --accent-strong: #4a515e;
+  --accent-soft: #e9edf1;
+  --shadow-lg: 0 24px 64px rgba(21, 28, 38, 0.14), 0 2px 8px rgba(21, 28, 38, 0.05);
+  --shadow-sm: 0 1px 2px rgba(21, 28, 38, 0.06);
   --radius-lg: 18px;
   --radius-md: 12px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -130,7 +130,7 @@ button {
 /* 对照 / 预览 分段控件 */
 .segmented {
   display: inline-flex;
-  background: rgba(60, 54, 44, 0.055);
+  background: rgba(21, 24, 29, 0.055);
   border-radius: 8px;
   padding: 2px;
   gap: 1px;
@@ -178,8 +178,8 @@ button {
 }
 
 .theme-rail:hover {
-  box-shadow: 0 4px 20px rgba(52, 40, 28, 0.08);
-  border-color: rgba(60, 54, 44, 0.14);
+  box-shadow: 0 4px 20px rgba(21, 28, 38, 0.08);
+  border-color: rgba(21, 24, 29, 0.14);
 }
 
 .rail-head {
@@ -240,12 +240,12 @@ button {
 .theme-card:hover {
   transform: translateY(-2px);
   border-color: var(--border-strong);
-  box-shadow: 0 4px 14px rgba(52, 40, 28, 0.1);
+  box-shadow: 0 4px 14px rgba(21, 28, 38, 0.1);
 }
 
 .theme-card.active {
   border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(217, 119, 87, 0.18), 0 4px 14px rgba(52, 40, 28, 0.1);
+  box-shadow: 0 0 0 2px rgba(95, 102, 116, 0.18), 0 4px 14px rgba(21, 28, 38, 0.1);
 }
 
 /* 纸样：底色/字体/强调色全部取自该主题自身的令牌 */
@@ -298,7 +298,7 @@ button {
 .btn {
   height: 32px;
   border: 1px solid var(--border);
-  background: rgba(255, 253, 250, 0.7);
+  background: rgba(251, 252, 254, 0.7);
   border-radius: 8px;
   padding: 0 12px;
   font-size: 12.5px;
@@ -318,7 +318,7 @@ button {
 }
 
 .btn:active {
-  background: rgba(60, 54, 44, 0.05);
+  background: rgba(21, 24, 29, 0.05);
 }
 
 .btn svg {
@@ -372,8 +372,8 @@ button {
 }
 
 .file-tree:hover {
-  box-shadow: 0 4px 20px rgba(52, 40, 28, 0.08);
-  border-color: rgba(60, 54, 44, 0.14);
+  box-shadow: 0 4px 20px rgba(21, 28, 38, 0.08);
+  border-color: rgba(21, 24, 29, 0.14);
 }
 
 .tree-head {
@@ -438,7 +438,7 @@ button {
 }
 
 .tree-folder:hover {
-  background: rgba(60, 54, 44, 0.05);
+  background: rgba(21, 24, 29, 0.05);
 }
 
 .tree-folder svg {
@@ -455,7 +455,7 @@ button {
   font-size: 10px;
   font-weight: 500;
   color: var(--faint);
-  background: rgba(60, 54, 44, 0.06);
+  background: rgba(21, 24, 29, 0.06);
   border-radius: 999px;
   padding: 1px 6px;
 }
@@ -479,7 +479,7 @@ button {
 }
 
 .tree-file:hover {
-  background: rgba(60, 54, 44, 0.05);
+  background: rgba(21, 24, 29, 0.05);
 }
 
 .tree-file.active {
@@ -570,7 +570,7 @@ button {
 }
 
 .tree-file-actions button:hover {
-  background: rgba(255, 253, 250, 0.9);
+  background: rgba(251, 252, 254, 0.9);
   color: var(--accent-strong);
 }
 
@@ -627,7 +627,7 @@ button {
   gap: 7px;
   padding: 5px 6px;
   background: var(--panel-solid);
-  box-shadow: 0 0 0 2px rgba(217, 119, 87, 0.18);
+  box-shadow: 0 0 0 2px rgba(95, 102, 116, 0.18);
 }
 
 .tree-file.renaming > svg {
@@ -679,14 +679,14 @@ button {
   width: 3px;
   height: 44px;
   border-radius: 999px;
-  background: rgba(60, 54, 44, 0.18);
+  background: rgba(21, 24, 29, 0.18);
 }
 
 .split-bar:hover::after,
 .split-dragging .split-bar::after {
   background: var(--accent);
   height: 64px;
-  box-shadow: 0 0 8px rgba(217, 119, 87, 0.5);
+  box-shadow: 0 0 8px rgba(95, 102, 116, 0.5);
 }
 
 /* 左侧源码面板：默认占主体，预览保留 430px 最小宽度 */
@@ -710,8 +710,8 @@ button {
 }
 
 .editor-side:hover {
-  box-shadow: 0 4px 20px rgba(52, 40, 28, 0.08);
-  border-color: rgba(60, 54, 44, 0.14);
+  box-shadow: 0 4px 20px rgba(21, 28, 38, 0.08);
+  border-color: rgba(21, 24, 29, 0.14);
 }
 
 /* 拖拽中：禁用宽度过渡，保证分割条跟手 */
@@ -752,8 +752,8 @@ button {
 }
 
 .preview-side:hover {
-  box-shadow: 0 4px 20px rgba(52, 40, 28, 0.08);
-  border-color: rgba(60, 54, 44, 0.14);
+  box-shadow: 0 4px 20px rgba(21, 28, 38, 0.08);
+  border-color: rgba(21, 24, 29, 0.14);
 }
 
 /* 面板头 */
@@ -911,12 +911,12 @@ button {
   top: calc(100% + 6px);
   left: 0;
   min-width: 148px;
-  background: rgba(255, 253, 250, 0.96);
+  background: rgba(251, 252, 254, 0.96);
   -webkit-backdrop-filter: blur(18px) saturate(1.4);
   backdrop-filter: blur(18px) saturate(1.4);
   border: 1px solid var(--border);
   border-radius: 10px;
-  box-shadow: 0 12px 32px rgba(45, 40, 30, 0.14);
+  box-shadow: 0 12px 32px rgba(21, 28, 38, 0.14);
   padding: 4px;
   z-index: 50;
   animation: menu-in 0.14s var(--ease);
@@ -1040,7 +1040,7 @@ button {
 :root {
   --art-bg: #ffffff;
   --art-ink: #2b2b28;
-  --art-accent: #d97757;
+  --art-accent: #5f6674;
   --art-heading: #1f1f1c;
   --art-heading-font: var(--serif);
   --art-hr: #e5e3dc;
@@ -1056,7 +1056,7 @@ button {
   align-items: stretch;
   /* 舞台光晕 */
   background:
-    radial-gradient(520px 300px at 50% 20%, rgba(217, 119, 87, 0.08), transparent 72%),
+    radial-gradient(520px 300px at 50% 20%, rgba(95, 102, 116, 0.08), transparent 72%),
     transparent;
 }
 
@@ -1130,8 +1130,8 @@ button {
   align-items: center;
   gap: 8px;
   padding: 9px 14px;
-  background: #f4f1eb;
-  border-bottom: 1px solid rgba(60, 54, 44, 0.1);
+  background: #eef1f5;
+  border-bottom: 1px solid rgba(21, 24, 29, 0.1);
   position: relative;
 }
 
@@ -1160,7 +1160,7 @@ button {
   transform: translateX(-50%);
   font-size: 12px;
   font-weight: 600;
-  color: #8a857a;
+  color: #6e7683;
 }
 
 /* 手机状态栏（跟随主题） */
@@ -1316,7 +1316,7 @@ button {
 
 .article-footer .action:hover {
   color: var(--art-accent);
-  background: rgba(217, 119, 87, 0.08);
+  background: rgba(95, 102, 116, 0.08);
 }
 
 /* 正文容器：样式全部内联 ⇒ 预览与导出（微信粘贴）同构 */
@@ -1752,7 +1752,7 @@ button {
 .preview-side[data-width='desktop'] .phone-screen {
   width: 100%;
   height: 100%;
-  border: 1px solid rgba(60, 54, 44, 0.14);
+  border: 1px solid rgba(21, 24, 29, 0.14);
   border-radius: 14px;
   box-sizing: border-box;
   box-shadow: var(--shadow-lg);
@@ -1794,7 +1794,7 @@ button {
   border-radius: 999px;
   padding: 11px 20px;
   font-size: 13px;
-  box-shadow: 0 14px 40px rgba(30, 25, 18, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 40px rgba(16, 20, 26, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.08);
   transform: translate(-50%, 24px) scale(0.92);
   opacity: 0;
   pointer-events: none;
@@ -1829,7 +1829,7 @@ button {
   .tree-body,
   .outline-drawer {
     scrollbar-width: thin;
-    scrollbar-color: rgba(90, 82, 68, 0.28) transparent;
+    scrollbar-color: rgba(84, 92, 104, 0.28) transparent;
   }
 }
 
@@ -1858,7 +1858,7 @@ button {
 .rail-list::-webkit-scrollbar-thumb,
 .tree-body::-webkit-scrollbar-thumb,
 .outline-drawer::-webkit-scrollbar-thumb {
-  background: rgba(90, 82, 68, 0.16);
+  background: rgba(84, 92, 104, 0.16);
   border-radius: 999px;
   /* 透明边框 + padding-box：让滑块看起来更细，又保留可点击宽度 */
   border: 2.5px solid transparent;
@@ -1872,7 +1872,7 @@ button {
 .rail-list:hover::-webkit-scrollbar-thumb,
 .tree-body:hover::-webkit-scrollbar-thumb,
 .outline-drawer:hover::-webkit-scrollbar-thumb {
-  background: rgba(90, 82, 68, 0.3);
+  background: rgba(84, 92, 104, 0.3);
   background-clip: padding-box;
 }
 
@@ -1882,7 +1882,7 @@ button {
 .rail-list::-webkit-scrollbar-thumb:hover,
 .tree-body::-webkit-scrollbar-thumb:hover,
 .outline-drawer::-webkit-scrollbar-thumb:hover {
-  background: rgba(90, 82, 68, 0.45);
+  background: rgba(84, 92, 104, 0.45);
   background-clip: padding-box;
 }
 
@@ -1974,12 +1974,12 @@ button {
   top: calc(100% + 6px);
   right: 0;
   min-width: 178px;
-  background: rgba(255, 253, 250, 0.96);
+  background: rgba(251, 252, 254, 0.96);
   -webkit-backdrop-filter: blur(18px) saturate(1.4);
   backdrop-filter: blur(18px) saturate(1.4);
   border: 1px solid var(--border);
   border-radius: 10px;
-  box-shadow: 0 12px 32px rgba(45, 40, 30, 0.14);
+  box-shadow: 0 12px 32px rgba(21, 28, 38, 0.14);
   padding: 4px;
   z-index: 80;
   animation: menu-in 0.14s var(--ease);
@@ -2042,7 +2042,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  background: rgba(60, 54, 44, 0.055);
+  background: rgba(21, 24, 29, 0.055);
   border-radius: 8px;
   padding: 2px;
 }
