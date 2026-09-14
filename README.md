@@ -134,7 +134,7 @@ xin-md/
 | 分支 | 说明 |
 |------|------|
 | `main` | 当前版本 **XIN-MD**，在原作者项目基础上更名并扩充主题库 |
-| `mars` | **原作者「火星编辑器 (Mars Editor)」的原始 main 版本存档**（提交 `d3cda59`），未做改动 |
+| `mars` | **上游 [whyubel1eve/Mars-Editor](https://github.com/whyubel1eve/Mars-Editor) 的原始 main 版本存档**（提交 `d3cda59`），未做改动 |
 
 项目原名「火星编辑器（Mars Editor）」，现统一更名为 **XIN-MD**：界面标题、印章字标、页面
 `title`、favicon、导出文件名、Cloudflare Pages 项目名均已更新。
@@ -142,7 +142,7 @@ xin-md/
 ## 致谢
 
 本项目的底座来自开源项目 **「火星编辑器 (Mars Editor)」**，原创作者 **bryc3**
-（`666406@gmail.com`），仓库：[oscar-wang-xin/xin-md](https://github.com/oscar-wang-xin/xin-md)。
+（`666406@gmail.com`），仓库：[whyubel1eve/Mars-Editor](https://github.com/whyubel1eve/Mars-Editor)。
 
 衷心感谢原作者贡献的这套编辑器骨架 —— 尤其是其中那个决定性的判断：
 
