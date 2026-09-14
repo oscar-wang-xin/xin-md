@@ -1,4 +1,4 @@
-# 火星编辑器 (Mars Editor)
+# XIN-MD
 
 Markdown 写作，一键转成**内联样式**富文本，粘贴到微信公众号编辑器即可无损还原。
 
@@ -9,7 +9,9 @@ Markdown 写作，一键转成**内联样式**富文本，粘贴到微信公众�
 本项目 git 远端为 [oscar-wang-xin/xin-md](https://github.com/oscar-wang-xin/xin-md)
 （fork 自 Bryc 初建的 Same 项目，主线作者 bryc3 `666406@gmail.com`，历史共 5 个提交）。克隆时的原始 `main`
 已原样归档到 **`mars`** 分支（对应提交 `d3cda59`，即 fork 版本快照）；当前 `main` 在其基础上继续演进。
-"Mars Editor" 名称即取自 "火星编辑器"。
+
+> 项目原名「火星编辑器（Mars Editor）」，现已统一更名为 **XIN-MD**（界面标题、页面 title、favicon、
+> 导出文件名、Cloudflare Pages 项目名一并更新）。
 
 ### 新增主题（gzh-design-skill 移植）
 
@@ -64,17 +66,17 @@ npm install
 npm run dev      # 开发服务器
 npm run build    # 类型检查 + 生产构建
 npm run preview  # 预览构建产物
-npm run deploy   # 构建并发到 Cloudflare Pages（mars-editor.pages.dev）
+npm run deploy   # 构建并发到 Cloudflare Pages（xin-md.pages.dev）
 ```
 
 ## 发版
 
-线上是 Cloudflare Pages 项目 `mars-editor`，**直传部署，没有接 GitHub 自动构建** ——
+线上是 Cloudflare Pages 项目 `xin-md`，**直传部署，没有接 GitHub 自动构建** ——
 推代码到 main 不会更新线上，必须跑一次：
 
 ```bash
 npm run deploy
 ```
 
-发完可以用 `npx wrangler pages deployment list --project-name mars-editor` 核对，
+发完可以用 `npx wrangler pages deployment list --project-name xin-md` 核对，
 最新一条的 Source 应当是刚推上去的 commit。

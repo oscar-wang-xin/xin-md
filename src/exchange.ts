@@ -156,7 +156,7 @@ export async function exportBackupZip(drafts: Draft[], images: Record<string, st
 
   entries.unshift({ name: MANIFEST, data: enc.encode(JSON.stringify(manifest, null, 2)) });
   const blob = await createZip(entries);
-  downloadBlob(`火星编辑器备份-${stamp()}.zip`, blob);
+  downloadBlob(`XIN-MD备份-${stamp()}.zip`, blob);
 }
 
 /* ---------------- 导入 ---------------- */

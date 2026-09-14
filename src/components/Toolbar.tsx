@@ -67,8 +67,8 @@ export default function Toolbar({
     <header className="toolbar">
       <div className="brand">
         {/* 印章式字标：平涂描边，不用发光徽标 */}
-        <span className="brand-mark" aria-hidden="true">火</span>
-        <span className="title">火星编辑器</span>
+        <span className="brand-mark" aria-hidden="true">X</span>
+        <span className="title">XIN-MD</span>
       </div>
 
       {/* 对照 / 预览 */}

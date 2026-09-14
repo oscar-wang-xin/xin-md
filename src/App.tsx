@@ -398,7 +398,7 @@ export default function App() {
     try {
       await ensureHighlighter();
       const { body } = renderArticle(markdown, theme, images, density);
-      const blob = await renderLongImage({ body, theme, author: '火星' });
+      const blob = await renderLongImage({ body, theme, author: 'XIN-MD' });
       downloadBlob(`${safeFileName(activeDraft?.name ?? '长图')}.png`, blob);
       flash('长图已导出');
     } catch (err) {
