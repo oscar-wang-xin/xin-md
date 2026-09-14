@@ -136,12 +136,13 @@ const EditorPane = forwardRef<HTMLElement, Props>(function EditorPane(
             },
             '.cm-content': {
               padding: '20px 22px 20px 24px',
-              caretColor: '#5f6674',
+              /* 跟随外壳色调：光标 / 行号 / 选区都取当前色调的强调色 */
+              caretColor: 'var(--accent)',
             },
             '.cm-line': { padding: '0' },
             '.cm-gutters': {
               background: 'transparent',
-              color: '#9aa2ad',
+              color: 'var(--faint)',
               fontSize: '13.5px',
               paddingLeft: '12px',
               paddingRight: '14px',
@@ -149,7 +150,7 @@ const EditorPane = forwardRef<HTMLElement, Props>(function EditorPane(
             },
             '.cm-activeLineGutter': { background: 'transparent' },
             '.cm-selectionBackground, &.cm-focused .cm-selectionBackground': {
-              background: 'rgba(95,102,116,0.22)',
+              background: 'var(--accent-soft)',
             },
             '&.cm-focused': { outline: 'none' },
             '.cm-activeLine': { background: 'transparent' },

@@ -9,6 +9,8 @@ import {
   UploadSimple,
 } from '@phosphor-icons/react';
 
+import TonePicker from './TonePicker';
+
 interface Props {
   viewMode: 'split' | 'preview';
   onViewMode: (m: 'split' | 'preview') => void;
@@ -87,6 +89,9 @@ export default function Toolbar({
       </div>
 
       <div className="toolbar-right">
+        {/* 编辑器色调（机械冷白 / 暖纸奶油 / 商务蓝 …），选择记在 localStorage */}
+        <TonePicker />
+
         {/* 导入：.md 各建一篇草稿，.zip 按备份包整体还原 */}
         <input
           ref={fileRef}

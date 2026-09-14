@@ -29,6 +29,167 @@
   --serif: Georgia, 'Songti SC', 'SimSun', 'Times New Roman', serif;
 }
 
+/* ---------------- 外壳色调（右上角选择器切换） ----------------
+   默认（:root）= 机械冷白。其余色调只覆盖配色变量，
+   圆角 / 字体 / 缓动等结构性令牌保持一致。 */
+
+/* 暖纸奶油：暖米纸底 + 陶土橙（编辑器初代配色） */
+html[data-shell-tone='warm'] {
+  --bg: #f3f0ea;
+  --bg-glow-1: #f3e6dc;
+  --bg-glow-2: #eae8e0;
+  --panel: rgba(255, 253, 250, 0.82);
+  --panel-solid: #fffdfa;
+  --border: rgba(60, 54, 44, 0.1);
+  --border-strong: rgba(60, 54, 44, 0.18);
+  --ink: #34302a;
+  --muted: #8a857a;
+  --faint: #b0ab9f;
+  --accent: #d97757;
+  --accent-strong: #c76545;
+  --accent-soft: #f9eee7;
+  --shadow-lg: 0 24px 64px rgba(52, 40, 28, 0.14), 0 2px 8px rgba(52, 40, 28, 0.05);
+  --shadow-sm: 0 1px 2px rgba(52, 40, 28, 0.06);
+}
+
+/* 商务蓝 */
+html[data-shell-tone='business'] {
+  --bg: #edf1f7;
+  --bg-glow-1: #dce6f2;
+  --bg-glow-2: #e4eaf4;
+  --panel: rgba(251, 253, 255, 0.82);
+  --panel-solid: #fbfdfe;
+  --border: rgba(30, 58, 95, 0.12);
+  --border-strong: rgba(30, 58, 95, 0.2);
+  --ink: #1e2a3a;
+  --muted: #5f6c7e;
+  --faint: #93a0b3;
+  --accent: #2f6fb2;
+  --accent-strong: #245a94;
+  --accent-soft: #e2ebf6;
+  --shadow-lg: 0 24px 64px rgba(24, 44, 72, 0.14), 0 2px 8px rgba(24, 44, 72, 0.05);
+  --shadow-sm: 0 1px 2px rgba(24, 44, 72, 0.06);
+}
+
+/* 薄荷绿 */
+html[data-shell-tone='mint'] {
+  --bg: #edf5f1;
+  --bg-glow-1: #dcece3;
+  --bg-glow-2: #e3f1ea;
+  --panel: rgba(250, 253, 251, 0.82);
+  --panel-solid: #fbfdfc;
+  --border: rgba(16, 66, 46, 0.12);
+  --border-strong: rgba(16, 66, 46, 0.2);
+  --ink: #173424;
+  --muted: #5c7668;
+  --faint: #90a79a;
+  --accent: #179c6b;
+  --accent-strong: #0f8157;
+  --accent-soft: #ddefe4;
+  --shadow-lg: 0 24px 64px rgba(15, 60, 42, 0.14), 0 2px 8px rgba(15, 60, 42, 0.05);
+  --shadow-sm: 0 1px 2px rgba(15, 60, 42, 0.06);
+}
+
+/* 墨水黑白 */
+html[data-shell-tone='ink'] {
+  --bg: #f4f4f5;
+  --bg-glow-1: #eaeaea;
+  --bg-glow-2: #efefef;
+  --panel: rgba(255, 255, 255, 0.85);
+  --panel-solid: #ffffff;
+  --border: rgba(0, 0, 0, 0.12);
+  --border-strong: rgba(0, 0, 0, 0.2);
+  --ink: #111111;
+  --muted: #555555;
+  --faint: #999999;
+  --accent: #262626;
+  --accent-strong: #000000;
+  --accent-soft: #ececec;
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.14), 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* 葡萄紫 */
+html[data-shell-tone='grape'] {
+  --bg: #f4f0f8;
+  --bg-glow-1: #e9e0f2;
+  --bg-glow-2: #f0ebf5;
+  --panel: rgba(253, 251, 255, 0.82);
+  --panel-solid: #fdfcff;
+  --border: rgba(72, 34, 102, 0.12);
+  --border-strong: rgba(72, 34, 102, 0.2);
+  --ink: #32203f;
+  --muted: #7a6487;
+  --faint: #ab9ab8;
+  --accent: #7c3aed;
+  --accent-strong: #6528c4;
+  --accent-soft: #efe6f8;
+  --shadow-lg: 0 24px 64px rgba(68, 30, 96, 0.14), 0 2px 8px rgba(68, 30, 96, 0.05);
+  --shadow-sm: 0 1px 2px rgba(68, 30, 96, 0.06);
+}
+
+/* 阿里橙 */
+html[data-shell-tone='ali'] {
+  --bg: #f7f2ec;
+  --bg-glow-1: #f7e4ce;
+  --bg-glow-2: #f4ecdf;
+  --panel: rgba(255, 252, 248, 0.82);
+  --panel-solid: #fffdf9;
+  --border: rgba(140, 70, 15, 0.12);
+  --border-strong: rgba(140, 70, 15, 0.2);
+  --ink: #3a2c1c;
+  --muted: #8c7560;
+  --faint: #b3a28e;
+  --accent: #ff6a00;
+  --accent-strong: #e05a00;
+  --accent-soft: #ffe9d6;
+  --shadow-lg: 0 24px 64px rgba(120, 64, 20, 0.14), 0 2px 8px rgba(120, 64, 20, 0.05);
+  --shadow-sm: 0 1px 2px rgba(120, 64, 20, 0.06);
+}
+
+/* 中国红 */
+html[data-shell-tone='china'] {
+  --bg: #f7efef;
+  --bg-glow-1: #f3dfe0;
+  --bg-glow-2: #f3e8e8;
+  --panel: rgba(255, 252, 252, 0.82);
+  --panel-solid: #fffcfc;
+  --border: rgba(128, 24, 30, 0.12);
+  --border-strong: rgba(128, 24, 30, 0.2);
+  --ink: #3b2024;
+  --muted: #8d6468;
+  --faint: #b8979a;
+  --accent: #c8102e;
+  --accent-strong: #a80c26;
+  --accent-soft: #f9e2e5;
+  --shadow-lg: 0 24px 64px rgba(104, 20, 26, 0.14), 0 2px 8px rgba(104, 20, 26, 0.05);
+  --shadow-sm: 0 1px 2px rgba(104, 20, 26, 0.06);
+}
+
+/* 色调选择器（右上角）：按钮上的色点 + 菜单项 */
+.tone-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex: none;
+  display: inline-block;
+}
+
+.tone-menu .tone-name {
+  flex: 1;
+  text-align: left;
+}
+
+.tone-menu button.active .tone-name {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.tone-check {
+  color: var(--accent);
+  font-size: 12px;
+}
+
 * {
   box-sizing: border-box;
 }
